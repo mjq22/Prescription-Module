@@ -1,0 +1,25 @@
+.footerLeftAction, .watermarkContainer {display: none !important;}
+.footerRightAction {left: 8px;top: 8px !important;}
+.footerRightAction .changePhotoIcon {display: none !important;}
+
+.swipeOverlay{
+	background-image: url(/wp-content/themes/bb-theme-child/assets/images/camera-overlay.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: cover !important;
+}
+/*#fb-vto-fitlive-detection-guide, 
+#fb-vto-fitlive-detection-analysis {
+	background: transparent;
+	background-image: url(/wp-content/themes/bb-theme-child/assets/images/camera-overlay.png) !important;
+	background-image: url(http://www.onlygfx.com/wp-content/uploads/2017/11/grunge-circle-frame-2-983x1024.png)  !important;
+
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	position: absolute !important;
+	left: 28% !important;
+	bottom: 28% !important;
+	right: 28% !important;
+	top: 28% !important;
+	background-size: contain !important;
+}*/

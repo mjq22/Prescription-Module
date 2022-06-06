@@ -1,0 +1,1726 @@
+.woocommerce .composite_form{ 
+    position: static !important; 
+    padding: 0 !important;
+}
+.woocommerce .composite_form .composite_component .component_content{ 
+    height: auto !important; 
+    overflow: visible !important;
+}
+
+/* RX Nav Styles */
+.woocommerce .composite_form .composite_pagination {
+    background: #848484;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.woocommerce .composite_form .composite_pagination ul{ padding: 0; }
+.woocommerce .composite_form .composite_pagination ul li:before,
+.woocommerce .composite_form .composite_pagination ul li:after{ display: none; }
+.woocommerce .composite_form .composite_pagination ul li{
+    float: none;
+    vertical-align: middle;
+    margin: 0;
+    background: none !important;
+    color: #c0c0c0;
+    padding: 0 25px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+}
+.woocommerce .composite_pagination ul li.pagination_element_current,
+.woocommerce .composite_pagination ul li.pagination_element_current .element_link{ 
+    color: #fff; 
+    font-weight: 600;
+}
+.woocommerce .composite_pagination .element_index{
+    color: #a1a1a1;
+    font-weight: 400;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    margin: 0 5px 2px 0;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+.woocommerce .composite_pagination ul li.pagination_element_current .element_index{
+    border-color: #fff;
+    background: url(../images/checkmark-for-verification.png) no-repeat center;
+}
+.woocommerce .composite_pagination .element_link{ 
+    padding: 0; 
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: #c0c0c0;
+}
+.woocommerce .composite_pagination .element_link:hover{ text-decoration: none; } 
+
+/* Step Titles Styles */
+.woocommerce .composite_form .component_inner .composite_navigation,
+.woocommerce .composite_form .composited_product_details_wrapper,
+.woocommerce .composite_form .composited_product_images,
+.woocommerce .composite_form .component_title_wrapper{ display: none; }
+.woocommerce .composite_form .component_description{ margin: 8px 0 16px; }
+.woocommerce .composite_form .component_description p {
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+    font-weight: 400;
+    color: #333;
+}
+.woocommerce .composite_form .component_section_title,
+.woocommerce .composite_form .component_message{ display: none !important; } 
+
+/* Step Thumbnails */
+ .woocommerce .composite_form ul.component_option_thumbnails_container{ 
+    margin: 0 -9px; 
+    display: flex;
+    flex-wrap: wrap;
+}
+.woocommerce .composite_form ul.component_option_thumbnails_container li.component_option_thumbnail_container.hidden{ display: none; }
+.woocommerce .composite_form ul.component_option_thumbnails_container li.component_option_thumbnail_container{
+    padding: 0 9px;
+    width: 50% !important;
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    clear: none !important;
+    margin: 0 0 20px 0;
+}
+.woocommerce .composite_form ul.component_option_thumbnails_container .component_option_thumbnail.selected{ border-color: transparent; }
+.woocommerce .composite_form ul.component_option_thumbnails_container .component_option_thumbnail {
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    margin: 0 !important;
+    padding: 15px 20px 20px;
+    border-radius: 3px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.woocommerce .composite_form ul.component_option_thumbnails_container .component_option_thumbnail.selected:after{ display: block; }
+.woocommerce .composite_form ul.component_option_thumbnails_container .component_option_thumbnail:after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-radius: 3px;
+    border: 2px solid #032989;
+    pointer-events: none;
+    display: none;
+}
+.woocommerce .composite_form .component_option_thumbnail .title {
+    font-size: 16px;
+    line-height: 1.4;
+    padding-bottom: 7px;
+    font-weight: 600;
+    border-bottom: 1px solid #c0c0c0;
+    text-transform: uppercase;
+    margin: auto;
+}
+.woocommerce .composite_form .component_option_thumbnail .image {
+    margin: 12px 0;
+    height: 36px;
+    overflow: hidden;
+    padding: 0;
+    line-height: 36px;
+}
+.woocommerce .composite_form .component_option_thumbnail .image img {
+    max-height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    max-width: 110px;
+}
+.woocommerce .composite_form .component_option_thumbnail .thumbnail_description{ 
+    padding: 0;
+    padding-bottom: 30px;
+}
+.woocommerce .composite_form .component_option_thumbnail .thumbnail_description p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0 0 15px;
+}
+.woocommerce .composite_form .component_option_thumbnail .thumbnail_description ul.desc-ul {
+    padding: 20px 8% 0;
+    margin: 0 0 20px;
+    border-top: 1px solid #ddd;
+}
+.woocommerce .composite_form .component_option_thumbnail .thumbnail_description ul.desc-ul li {
+    list-style: none;
+    margin: 0 0 13px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    min-height: 35px;
+    padding: 7px 0 0 65px;
+    position: relative;
+}
+.woocommerce .composite_form .component_option_thumbnail .thumbnail_description ul.desc-ul img{
+    margin-left: 0;
+    max-width: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+}
+/*.woocommerce .composite_form .component_option_thumbnail.selected .thumbnail_buttons .component_option_thumbnail_select{ display: none; }
+.woocommerce .composite_form .component_option_thumbnail .thumbnail_buttons .pre-selected{ display: none; }
+.woocommerce .composite_form .component_option_thumbnail.selected .thumbnail_buttons .pre-selected{ display: block; }*/
+.woocommerce .composite_form .component_option_thumbnail .thumbnail_buttons {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+.woocommerce .composite_form .component_option_thumbnail .thumbnail_buttons button {
+    width: 100%;
+    height: 100%;
+    opacity: 0 !important;
+    pointer-events: all !important;
+    text-indent: 0 !important;
+}
+.woocommerce .composite_form .component_option_thumbnail .thumbnail_description .price {
+    font-size: 14px !important;
+    color: #666666;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Show Bundle Products */
+.woocommerce .composite_form .composite_component.active_content .composited_product_details_wrapper{ display: block; } 
+
+/* Component Addon */
+.woocommerce .composite_form .component_wrap .price, 
+.woocommerce .composite_form .component_wrap .quantity_button, 
+.woocommerce .composite_form .component_wrap .wc-pao-addon-container select { display: none !important; }
+.woocommerce .composite_form .component_wrap .wc-pao-addon-color{ 
+    margin: 0; 
+    padding: 0;
+}
+.woocommerce .composite_form .component_wrap .wc-pao-addon-color .form-row{ 
+    margin: 0; 
+    padding: 0;
+}
+.woocommerce .composite_form .component_wrap .wc-pao-addon-container .wc-pao-addon-image-swatch.selected{ border: 2px solid #032989; }
+.woocommerce .composite_form .component_wrap .wc-pao-addon-container .wc-pao-addon-image-swatch {
+    padding: 12px 13px;
+    margin: 4px 0px;
+    border: 1px solid #ddd;
+    background: #ffffff !important;
+    outline: none;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+}
+.woocommerce .composite_form .component_wrap .wc-pao-addon-container .wc-pao-addon-image-swatch img {
+    float: left;
+    margin-left: 5px;
+}
+.woocommerce .composite_form .component_wrap .wc-pao-addon-container .wc-pao-addon-image-swatch span {
+    float: left;
+    margin-left: 15px;
+    margin-top: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Component Content Styles */
+.woocommerce .composite_form .error-msg {
+    font-size: 14px;
+    color: #D0021B;
+    line-height: 1.6;
+    padding: 10px;
+    border: 1px solid #D0021B;
+    text-align: center;
+}
+.woocommerce .composite_form .composite_component .component_content .component_summary .content{ margin: 0; }
+.woocommerce .composite_form .composite_component .component_content .bundled_products{
+    margin: 0;
+    padding: 0;
+}
+.woocommerce .composite_form .composite_component .component_content .bundled_products li{
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+.woocommerce .composite_form .composite_component .component_content .bundled_products li:first-child .product_title{ padding: 30px 0 0; }
+.woocommerce .composite_form .composite_component .component_content .bundled_products .product_title{
+    float: left;
+    width: 29%;
+    max-width: 164px;
+    text-align: left;
+    margin: 0 !important;
+    padding: 15px 0 0;
+    color: #333;
+}
+.woocommerce .composite_form .composite_component .component_content .bundled_products .cart{
+    float: none;
+    overflow: hidden;
+}
+.woocommerce .composite_form .composite_component .component_content .bundled_products .cart .bundled_item_cart_content{ 
+    max-width: 435px; 
+    overflow: hidden;
+}
+.woocommerce .composite_form .composite_component .component_content .bundled_products li .wc-pao-addon-container{
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+    max-width: 98px;
+}
+.woocommerce .composite_form .composite_component .component_content .bundled_products li .wc-pao-addon-container.wc-pao-addon-add{ float: right; }
+.woocommerce .composite_form .composite_component .component_content .bundled_products li .wc-pao-addon-container.wc-pao-addon-pd{ display: none !important; }
+.woocommerce .composite_form .composite_component.active_content .component_content .component_data .single_variation_wrap{ display: none; }
+.woocommerce .composite_form .composite_component.active_content .component_content .component_data.swatches-addon{
+    background: none;
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+.woocommerce .composite_form .composite_component.active_content .component_content .component_data{
+    background: #fff;
+    padding: 35px 30px;
+    border: 1px solid #ddd;
+    float: none;
+    width: auto;
+    margin: 0 0 20px;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data{ overflow: hidden; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addons-container{ max-width: 596px;  }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addons-container:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-container{ 
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    padding: 0 4px;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-container:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-heading{
+    margin: 0;
+    font-weight: 400;
+    color: #333;
+    font-size: 16px;
+    line-height: 20px;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-container.wc-pao-addon-enter-your-details-so-we-can-retrieve-your-prescription{ margin: 0 0 30px; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-upload-prescription .wc-pao-addon-heading,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-save-prescription .wc-pao-addon-heading,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-pupillary-distance-pd .wc-pao-addon-heading,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-practice-location .wc-pao-addon-heading,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-who-is-the-prescription-for .wc-pao-addon-heading{
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+}
+/* Addon Titles */
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-upload-prescription,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-save-prescription,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-pupillary-distance-pd,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-practice-location,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-who-is-the-prescription-for{
+    padding: 32px 30px 0 0;
+    max-width: 164px;
+    width: 36.2%;
+    float: left;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-upload-prescription,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-save-prescription,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-pupillary-distance-pd,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-who-is-the-prescription-for,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-first-name,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-last-name{
+    float: left;
+    width: 36.2%;
+    /*width: 216px;*/
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd, 
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-right-pd, 
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-left-pd{
+    float: left;
+    width: 33%;
+    max-width: 87px;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-select-the-practice-where-you-had-your-prescription {
+    padding: 40px 0 0;
+    margin: 40px 0 30px;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    float: left;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-choose-your-practice {
+    width: 50%;
+    float: left;
+}
+/* Spaces and Borders  */
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-space-and-border{
+    padding: 30px 999px 0;
+    border-bottom: 1px solid #d5d5d5;
+    margin: 0 -999px 16px;
+    clear: both;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-space-and-border .wc-pao-addon-heading{
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Measure My PD */
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd label, 
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-right-pd label, 
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-left-pd label{ text-align: center; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-measure-my-pd .form-row{ display: none; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-right-pd, 
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-left-pd{ display: none; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-measure-my-pd label{
+    padding: 10px;
+    width: 170px;
+    height: 64px;
+    border-radius: 3px;
+    line-height: 46px;
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 50px;
+    background: url(../images/ruler.png) no-repeat left 15px center #edf1fa;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    border: 1px solid #edf1fa;
+    background-size: 30px;
+    cursor: pointer;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-measure-my-pd {
+    float: right;
+    width: 180px;
+    position: relative;
+    height: 64px;
+    margin: 14px 4px 14px 14px;
+    cursor: pointer;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-my-pupillary-distance-pd-is-listed-on-my-prescription{
+    margin: 35px 0 0;
+    padding: 0 0 0 168px;
+    float: left;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd-checkbox{
+    border-bottom: 1px solid #d5d5d5;
+    margin: 12px -999px 40px 0;
+    padding: 0 999px 20px 168px;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-my-pupillary-distance-pd-is-listed-on-my-prescription label,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd-checkbox label{ margin: 0; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-my-pupillary-distance-pd-is-listed-on-my-prescription label input,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd-checkbox label input{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    border-radius: 0 !important;
+    border-color: #c0c0c0;
+    position: relative;
+    opacity: 0;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-my-pupillary-distance-pd-is-listed-on-my-prescription label:before,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd-checkbox label:before {
+    content: '';
+    top: 0;
+    margin: 0px auto;
+    bottom: 0;
+    padding: 0 0 2px;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border: 1px solid #c0c0c0;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-my-pupillary-distance-pd-is-listed-on-my-prescription label.active:after,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd-checkbox label.active:after { display: block; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-my-pupillary-distance-pd-is-listed-on-my-prescription label:after,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd-checkbox label:after {
+    content: "";
+    top: 4px;
+    right: auto;
+    margin: 0 auto;
+    bottom: 0;
+    padding: 0 0 2px;
+    position: absolute;
+    z-index: 99;
+    cursor: pointer;
+    left: 4px;
+    line-height: 1.3;
+    height: 16px;
+    display: none;
+    width: 16px;
+    background: url(../images/checkmark.png) no-repeat center !important;
+    background-size: 12px !important;
+}
+
+/* Save Prescription */
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-save-prescription{ padding-top: 42px; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-save-your-prescription-for-future-use{
+    float: left;
+    width: 45%;
+    /*width: 282px;*/
+    position: relative;
+    margin: 20px 0 42px;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-date-of-prescription{
+    float: left;
+    width: 27.4%;
+    /*width: 148px;*/
+    position: relative;
+    margin: 20px 0 42px;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-date-of-prescription .form-row{
+    background: url(../images/calendar.png) no-repeat right 10px center !important;
+    background-size: 22px !important;
+}
+/*.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-date-of-prescription,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-save-your-prescription-for-future-use{ overflow: hidden; }*/
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-date-of-prescription .wc-pao-addon-description,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-save-your-prescription-for-future-use .wc-pao-addon-description{
+    position: absolute;
+    left: 0;
+    top: 33px;
+    z-index: 99;
+    font-size: 14px;
+    font-weight: 400;
+    color: #cacaca;
+    font-style: italic;
+    z-index: 0;
+    text-transform: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 14px;
+}
+
+/* Use save Prescription */
+.woocommerce .composite_form .composite_component.active_content .component_content .component_data #inline-1{ display: block; }
+#inline-1 .switch-presc {
+    float: right;
+    margin: -90px -30px 0 0;
+    display: inline-block;
+    background: #f6404e;
+    padding: 10px 30px;
+    color: #fff;
+    font-weight: 500;
+}
+#inline-1 .switch-presc:hover {
+    background: #f6404e;
+    text-decoration: none;
+    background: #a91917;
+    color: #fff;
+}
+#inline-1 .sp-prescription-loader {
+    display: none;
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    background: rgba(255,255,255,0.9);
+}
+#inline-1 .sp-prescription-loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -64px 0 0 -64px;
+}
+#inline-1 .saved-presc { padding: 0 40px; }
+#inline-1 .saved-presc h3 {
+    margin:0 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+#inline-1 .login-form-wrapper {
+    padding: 50px 20px;
+    background: #f6f6f6;
+    margin-top: 0;
+}
+#inline-1 .login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+#inline-1 .login-form label {
+    width: 100%;
+    margin:0 0 20px;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+}
+#inline-1 .login-form input {
+    height: 48px;
+    background: #fff !important;
+    border: 1px solid #c6c6c6 !important;
+}
+#inline-1 .login-form a.submit-btn:hover {
+    background: #5c5555;
+    text-decoration: none;
+}
+#inline-1 .login-form a.submit-btn {
+    width: 150px;
+    height: 47px;
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    line-height: 47px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#inline-1 .login-form .forgot-pass { display: block; }
+
+/* Save Prescription Table */
+#inline-1 .js-table-responsive p.no-pres-text{ 
+    text-align: center; 
+    margin: 0;
+}
+#inline-1 .js-table-responsive .shop_table_responsive { width: 100%; }
+#inline-1 .js-table-responsive table.shop_table_responsive td {
+    border: none;
+    width: 100%;
+    padding: 0;
+    padding: 0 0 35px;
+    background: #fafafa;
+}
+#inline-1 .js-table-responsive table.shop_table_responsive tr:last-child td{ padding: 0; }
+#inline-1 .js-table-responsive .presc-header{ overflow: hidden; }
+#inline-1 .js-table-responsive .rx-uname, 
+#inline-1 .js-table-responsive .pres-date {
+    float: left;
+    width: 50%;
+    background: #e4e4e4;
+    padding: 10px 18px;
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+}
+#inline-1 .js-table-responsive .pres-date {
+    text-align: right;
+    font-weight: 400;
+}
+#inline-1 .js-table-responsive .pres-date span{ color: #444; }
+#inline-1 .js-table-responsive .pres-values {
+    float: left;
+    width: 76%;
+    background: #fafafa;
+    padding: 7px 18px;
+}
+
+#inline-1 .js-prescription-list ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#inline-1 .js-prescription-list ul >li{ border-top: 1px solid #ccc }
+#inline-1 .js-prescription-list ul >li:first-child{ border:none; }
+#inline-1 .js-prescription-list ul >li span{
+    display: inline-block;
+    vertical-align: top;
+    width: 14.5%;
+    font-size: 14px;
+    padding: 10px 6px;
+    font-weight: 400;
+    color: #000;
+    /*min-width: 62px;*/
+    text-align: center;
+}
+#inline-1 .js-prescription-list ul >li.js-heading span{ 
+    padding: 5px 6px; 
+    font-size: 12px;
+    color: #444;
+    text-transform: uppercase;
+}
+#inline-1 .js-prescription-list ul >li span.js-box1{
+    width: 20%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+
+#inline-1 .js-table-responsive .pres-edit {
+    float: left;
+    width: 24%;
+    height: 100%;
+    background: #fafafa;
+    min-height: 105px;
+    padding: 34px 18px 0 0;
+    text-align: right;
+}
+#inline-1 .js-table-responsive .pres-edit input {
+    position: absolute;
+    opacity: 0;
+}
+#inline-1 .js-table-responsive .pres-edit label {
+    background: #000;
+    color: #fff;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Send Prescription Later */
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-send-your-prescription-later .wc-pao-addon-heading{ margin: 0 0 20px; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-send-your-prescription-later {
+    text-align: center;
+    padding:0 999px 50px 120px;
+    margin:0 -999px 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-send-your-prescription-later p { 
+    font-size: 15px; 
+    text-transform: none;
+    font-style: normal;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-send-your-prescription-later span{ color: #f26330; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-send-your-prescription-later a{ text-decoration: underline; }
+
+
+/* Upload Prescription */
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-upload-your-prescription {
+    position: relative;
+    width: calc(100% - 174px);
+    /*max-width: 71%;*/
+    text-align: center;
+    height: 122px;
+    margin: 0 4px 0 0;
+    padding: 28px 0 0;
+    float: right;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-upload-your-prescription .form-row input{
+    width: 427px;
+    height: 122px;
+    background: none;
+    opacity: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-upload-your-prescription .form-row small{ display: none; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-upload-your-prescription label{
+    font-size: 14px;
+    color: #8ba7d7;
+    font-weight: 600;
+    background: url(../images/camera.png) no-repeat center top;
+    background-size: 26px;
+    padding: 30px 0 0;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-upload-your-prescription.field-error .form-row{ 
+    border-color: #e31937; 
+    background: rgba(227,25,55,0.05);
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-upload-your-prescription .form-row{
+    text-transform: capitalize;
+    width: 427px;
+    height: 122px;
+    border: 2px dashed #8ba7d7;
+    /*line-height: 130px;*/
+    left: 0;
+    z-index: 0;
+    top: 0;
+    position: absolute;
+    max-width: 100%;
+    cursor: pointer;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-upload-your-prescription .wc-pao-addon-description{
+    font-style: normal;
+    color: #666666;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin: 4px 0 0;
+    text-align: center;
+    font-size: 12px;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-upload-your-prescription .error{
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+/* File Preview */
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-file-preview{
+    float: left;
+    width: calc(100% - 174px);
+    border: 2px dashed #8ba7d7;
+    /*max-width: 424px;*/
+    padding: 10px;
+    text-align: center;
+    max-height: 300px;
+    display: none;
+    /*margin: -20px 4px 20px 0;*/
+    margin: 0 4px 0 0;
+    position: relative;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-file-preview .wc-pao-addon-heading{
+    font-size: 0;
+    right: 3px;
+    top: 3px;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-file-preview .wc-pao-addon-heading:before {
+    content: "x";
+    position: absolute;
+    font-size: 16px;
+    right: 0;
+    top: 0;
+    background: rgba(255, 0, 0, 0.7);
+    text-transform: lowercase;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    line-height: 24px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-file-preview .preview-img{ max-height: 280px; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-file-preview .file-name {
+    display: block;
+    font-size: 12px;
+    padding-top: 8px;
+}
+
+/* Confirm Button  */
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-confirm {
+    /*width: 428px;*/
+    background: #3f6bb2;
+    padding: 14px 10px;
+    border-radius: 3px;
+    margin: 35px 4px 0 0;
+    cursor: pointer;
+    width: calc(100% - 168px);
+    text-align: center;
+    transition: 0.2s ease-in all;
+    float: right;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-confirm:hover { background: #204391; }
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-confirm h2{ 
+    color: #fff; 
+    margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.woocommerce .composite_form .composite_component .component_content .bundle_data .component_wrap {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+/* Back Link */
+.woocommerce .composite_form .composite_navigation{ 
+    overflow: hidden; 
+    display: none;
+}
+.woocommerce .composite_form .composite_navigation .composite_navigation_inner{ padding: 0 !important; }
+.woocommerce .composite_form .custom-back,
+.woocommerce .composite_form .composite_navigation .prev {
+    margin: 0 !important;
+    padding-left: 22px;
+    background: url(../images/back.png) no-repeat 0 0;
+    font-weight: 400;
+    float: none;
+    font-size: 16px !important;
+    color: #333;
+}
+.woocommerce .composite_form
+
+/* Prescription Forms */
+.woocommerce .composite_form .composite_component .component_content .bundled_products .wc-pao-addon-container label,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-container label{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: none;
+    color: #333;
+    display: block;
+    margin: 0 0 2px;
+    position: relative;
+}
+.woocommerce .composite_form .composite_component .component_content .bundled_products li:first-child .wc-pao-addon-container label{ display: block; }
+.woocommerce .composite_form .composite_component .component_content .bundled_products .wc-pao-addon-container label{ display: none; }
+.woocommerce .composite_form .composite_component .component_content .bundled_products .wc-pao-addon-container label{ 
+    text-transform: uppercase !important; 
+    font-size: 13px;
+    font-weight: 400;
+}
+.woocommerce .composite_form .composite_component .component_content .bundled_products .form-row,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .form-row{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.woocommerce .composite_form .composite_component .component_content .bundled_products .form-row .wc-pao-addon-chars-remaining,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .form-row .wc-pao-addon-chars-remaining{ display: none; }
+.woocommerce .composite_form .composite_component .component_content .bundled_products .form-row input[type="text"],
+.woocommerce .composite_form .composite_component .component_content .bundled_products .form-row input[type="email"],
+.woocommerce .composite_form .composite_component .component_content .bundle_data .form-row input[type="text"], 
+.woocommerce .composite_form .composite_component .component_content .bundle_data .form-row input[type="email"] {
+    border-radius: 3px;
+    border: 1px solid #c0c0c0;
+    background: transparent;
+    height: 49px;
+    padding: 6px 7px;
+    font-size: 16px;
+    color: #000;
+}
+.woocommerce .composite_form .composite_component .component_content .products .wc-pao-addon.wc-pao-addon-add .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .products .wc-pao-addon.wc-pao-addon-cyl .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .products .wc-pao-addon.wc-pao-addon-sph .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-left-pd .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-right-pd .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-choose-your-practice .form-row:after {
+    background: url(../images/select-arrow.jpg) no-repeat center #fff;
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 6px;
+    top: 2px;
+    bottom: 2px;
+    display: block !important;
+    width: 10px;
+    pointer-events: none;
+}
+.woocommerce .composite_form .composite_component .component_content .products .form-row select,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .form-row select {
+    border-radius: 3px;
+    border: 1px solid #c0c0c0;
+    background: #fff;
+    height: 49px;
+    padding: 8px 7px 6px;
+    color: #000;
+}
+/* Field Errors */
+.woocommerce .composite_form .composite_component .component_content .products .wc-pao-addon.field-error.wc-pao-addon-add .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .products .wc-pao-addon.field-error.wc-pao-addon-cyl .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .products .wc-pao-addon.field-error.wc-pao-addon-sph .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.field-error.wc-pao-addon-left-pd .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.field-error.wc-pao-addon-right-pd .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.field-error.wc-pao-addon-pd .form-row:after,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.field-error.wc-pao-addon-choose-your-practice .form-row:after{ background-color: rgb(254 243 245); }
+.woocommerce .composite_form .composite_component .component_content .products .wc-pao-addon.field-error .form-row select,
+.woocommerce .composite_form .composite_component .component_content .products .wc-pao-addon.field-error .form-row input,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.field-error select,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.field-error input{
+    border-color: rgb(227, 25, 55) !important;
+    background-color: rgba(227, 25, 55, 0.05) !important;
+}
+span.error {
+    font-size: 12px;
+    color: #e31937;
+    line-height: 1;
+    display: block;
+    text-transform: none;
+    padding: 6px 0 0;
+    font-weight: 600;
+    text-align: left;
+}
+/* Disable Field */
+.woocommerce .composite_form .composite_component .component_content .products .wc-pao-addon input.disabled,
+.woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon input.disabled{
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* Variations */
+.component_data table.variations tr td.label { display: none; }
+.component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper{
+    display: flex !important;
+    margin: 0 -9px !important;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li {
+    padding: 0 9px;
+    width: 50% !important;
+    display: block;
+    margin: 0 0 20px;
+    box-shadow: none !important;
+    background: none !important;
+    border: 0 !important;
+    position: relative;
+    height: auto;
+}
+.component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li.selected .variable-item-contents{ border-color: transparent; }
+.component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li .variable-item-contents {
+    border: 1px solid #ddd;
+    background: #fff;
+    margin: 0 !important;
+    padding: 15px 20px 57px;
+    border-radius: 3px;
+    position: relative;
+    display: block;  
+}
+.component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li.selected .variable-item-contents:after { display: block; }
+.component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li .variable-item-contents:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-radius: 3px;
+    border: 2px solid #032989;
+    pointer-events: none;
+    display: none;
+}
+.component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li .vari-title {
+    font-size: 16px;
+    line-height: 1.4;
+    padding-bottom: 5px;
+    font-weight: 700;
+    border-bottom: 1px solid silver;
+    text-transform: uppercase;
+    margin: auto;
+    display: block;
+    padding: 0 0 5px!important;
+    color: #333!important;
+}
+.component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li img {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 16px auto 12px;
+}
+.component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li .vari-desc p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0 auto 15px;
+}
+.component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li .vari-price {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+}
+.woocommerce div.product .composite_component span.price, 
+.woocommerce-page div.product .composite_component span.price {
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+    line-height: 30px;
+    color: #666 !important;
+}
+.component .component_option_each {
+    display: none;
+}
+.component_data table.variations tr.attribute_options:nth-child(2) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(50% - 9px);
+}
+[aria-label="Rx Sunglasses Type"] .variable-item-span.variable-item-span-button {
+    display: none;
+}
+/* Variation Color Swatches */
+.component_data table.variations tr .reset_variations { display: none !important; }
+.woo-variation-swatches.woo-variation-swatches-ie11 .component_content .variable-items-wrapper, 
+.component_content .variable-items-wrapper {
+    display: none !important;
+}
+ul.variable-items-wrapper.button-variable-wrapper.custom-ul{
+    margin-top: 10px !important;
+    display: block !important;
+    text-align: left;
+}
+.variable-items-wrapper.custom-ul li.variable-item.button-variable-item.level-3.selected{ border: 2px solid #032989; }
+.variable-items-wrapper.custom-ul li.variable-item.button-variable-item.level-3.selected:hover{ box-shadow: none; }
+.variable-items-wrapper.custom-ul li.variable-item.button-variable-item.level-3 {
+    padding: 12px 13px;
+    width: 100% !important;
+    margin: 0 0 8px;
+    border: 1px solid #ddd;
+    background: #ffffff !important;
+    height: auto;
+    box-shadow: none;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+}
+.variable-items-wrapper.custom-ul li.variable-item.button-variable-item.level-3 span.color-img {
+    float: left;
+}
+.variable-items-wrapper.custom-ul li.variable-item.button-variable-item.level-3 span.variable-item-span {
+    padding: 0 !important;
+    border: none;
+    float: left;
+    margin-left: 15px;
+    margin-top: 7px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+/* Review Step */
+
+.woocommerce .composite_form .composite_data .composite_summary .summary_title{ display: none; }
+.woocommerce .composite_form .composite_data .composite_summary ul.summary_elements{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.woocommerce .composite_form .composite_data .composite_summary ul.summary_elements > li:nth-child(2){ display: none; }
+.woocommerce .composite_form .composite_data .composite_summary ul.summary_elements > li{
+    background: #fff;
+    border: 1px solid #ddd;
+    min-height: 80px;
+    padding: 20px 25px 15px;
+    position: relative;
+    float: none;
+    width: 100%;
+}
+
+.woocommerce .composite_form .composite_data .composite_summary .summary_element_wrapper_inner{
+    padding: 0;
+}
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements .summary_element_content{ margin: 0; }
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements .summary_element_title{
+    width: 28%;
+    float: left;
+}
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements .summary_element_title .title{ margin: 0; }
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements .summary_element_title .step_index{ display: none; }
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements .summary_element_title .step_title{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #333;
+    text-align: left;
+    display: block;
+}
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements .summary_element_image{ display: none; }
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements .summary_element_selection{
+    float: left;
+    width: 52%;
+    text-align: left;
+}
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements ul.content_product_meta{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.1;
+    padding: 0;
+    text-transform: none;
+}
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements ul.content_product_meta >li{
+    margin: 0.5em 0 0 0;
+    padding: 0;
+}
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements ul.content_product_meta .span.meta_element_sep,
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements ul.content_product_meta .meta_key{ display: none; }
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements .summary_element_selection .content_product_title{
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements li .summary_element_price {
+    width: 20%;
+    float: left;
+}
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements li .summary_element_price .price{ 
+    text-align: right; 
+    font-size: 16px;
+}
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements li .summary_element_button{
+    float: right;
+    margin: 0;
+}
+.woocommerce .composite_form .composite_data .composite_summary  ul.summary_elements li .summary_element_button .button.summary_element_select {
+    background: none;
+    padding: 0;
+    line-height: 1;
+    color: #838383;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: underline;
+    border: none;
+}
+
+.woocommerce .composite_form .composite_price{ padding: 20px 25px; }
+.woocommerce .composite_form .composite_price .price:before{
+    content: 'Prescription Lenses Subtotal';
+    float: left;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.woocommerce .composite_form .composite_price .price{
+    margin: 0 !important;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.7;
+    font-size: 16px;
+}
+.woocommerce .composite_form .composite_price .price .amount{ float: right; }
+.woocommerce .composite_form .composite_button{ display: none !important; }
+
+/* Sidebar */
+#review-sidebar form.cart{ margin: 0 0 7px !important; }
+#review-sidebar form.cart h3 {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+#review-sidebar form.cart .product-image {
+    border-bottom: 1px solid #ebebeb;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 22px;
+}
+#review-sidebar form.cart .title-price-area{ overflow: hidden; }
+#review-sidebar form.cart .product-title-frame {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.4;
+    float: left;
+    width: 70%;
+    font-weight: 700;
+}
+#review-sidebar form.cart .product-title-frame span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+}
+#review-sidebar form.cart .product-price-frame {
+    overflow: hidden;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+#review-sidebar #pres-totals-wrapper{ overflow: hidden; }
+#pres-totals-wrapper .title {
+    float: left;
+    width: 70%;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 700;
+}
+#pres-totals-wrapper .price {
+    overflow: hidden;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+/* Toggler Details */
+#review-sidebar .toggler {
+    display: inline-block;
+    vertical-align: top;
+    color: #666;
+    padding-right: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 1;
+}
+#review-sidebar .toggler i {
+    color: #50b079;
+    margin-left: 5px;
+    font-size: 16px;
+}
+#review-sidebar .toggler.active i {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+#review-sidebar .widget_composite_summary.summary_widget_hidden{
+    opacity: 1 !important;
+    visibility: visible;
+    position: static;
+    top: 0 !important;
+}
+#review-sidebar .widget_composite_summary .summary_element_title,
+#review-sidebar .widget_composite_summary .summary_element_title, 
+#review-sidebar .widget_composite_summary .summary_element_tap, 
+#review-sidebar .widget_composite_summary .summary_element_image, 
+#review-sidebar .widget_composite_summary .summary_element_price, 
+#review-sidebar .widget_composite_summary .composite_summary .summary_element_wrapper.disabled{ display: none; } 
+/*.summary_element_1584107435*/
+
+#review-sidebar .widget_composite_summary ul.summary_elements{
+    border-top: 1px solid #f0f0f0;
+    padding: 6px 0;
+    margin: 2px 0 15px;
+}
+#review-sidebar .widget_composite_summary ul.summary_elements li{ margin: 0; }
+#review-sidebar .widget_composite_summary ul.summary_elements > li:nth-child(2){ display: none; }
+#review-sidebar .widget_composite_summary .summary_element_wrapper_outer{ padding: 0; }
+#review-sidebar .widget_composite_summary .summary_element_wrapper_inner{ padding: 0; }
+#review-sidebar .widget_composite_summary .summary_element_content{ margin: 0; }
+#review-sidebar .widget_composite_summary .summary_element_selection{ font-style: italic; }
+
+#review-sidebar .widget_composite_summary_price,
+#review-sidebar .widget_composite_summary_error,
+#review-sidebar .widget_composite_summary_availability,
+#review-sidebar .widget_composite_summary .quantity { display: none; }
+
+#review-sidebar .widget_composite_summary .composite_button{ float: none; }
+#review-sidebar .widget_composite_summary .composite_button button.single_add_to_cart_button.disabled{
+    color: #cacaca !important;
+    background: #f2f2f2 !important;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+#review-sidebar .widget_composite_summary .composite_button button.single_add_to_cart_button {
+    width: 100%;
+    height: 59px;
+    border-radius: 3px !important;
+    font-size: 16px !important;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+    border: none !important;
+    opacity: 1 !important;
+    margin-top: 10px;
+}
+#review-sidebar .widget_composite_summary ul.summary_elements ul.content_product_meta{ padding: 0 0 0 8px; }
+#review-sidebar .widget_composite_summary ul.summary_elements ul.content_product_meta .meta_element_sep,
+#review-sidebar .widget_composite_summary ul.summary_elements ul.content_product_meta .meta_key{ display: none; }
+
+/* Close Button */
+#cross-rx img { cursor: pointer; }
+
+/* Start Over */
+.start-over {
+    float: right;
+    font-size: 13px;
+    line-height: 1;
+    padding: 2px 10px;
+    border: 1px solid #6184aa;
+    color: #6184aa;
+    margin: 0 0 10px;
+}
+.start-over:hover{
+    text-decoration: none;
+    background: #6184aa;
+    color: #fff;
+}
+
+/* Datepicker */
+.single #ui-datepicker-div{ 
+    padding:2px; 
+    border-radius: 0;
+    box-shadow: 3px 3px 6px 0 rgba(0,0,0,0.5);
+    font-family: 'Roboto', sans-serif !important;
+    border: none;
+}
+.single #ui-datepicker-div .ui-datepicker-header{
+    padding: 6px 0;
+    background: #3f6bb2;
+    border-radius: 0;
+}
+.single #ui-datepicker-div .ui-datepicker-title{}
+.single #ui-datepicker-div .ui-datepicker-title select{
+    width: calc(49% - 2px);
+    margin: 0 2px;
+    border: none;
+    height: 36px;
+    padding: 0 5px;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.single #ui-datepicker-div .ui-datepicker-prev{ left: 6px; }
+.single #ui-datepicker-div .ui-datepicker-next{ right: 6px; }
+.single #ui-datepicker-div .ui-datepicker-prev,
+.single #ui-datepicker-div .ui-datepicker-next{
+    top: 9px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+}
+.single #ui-datepicker-div table.ui-datepicker-calendar{}
+.single #ui-datepicker-div table.ui-datepicker-calendar tr{}
+.single #ui-datepicker-div table.ui-datepicker-calendar tr th,
+.single #ui-datepicker-div table.ui-datepicker-calendar tr td{ 
+    padding: 2px; 
+    width: 14.285%;
+}
+.single #ui-datepicker-div table.ui-datepicker-calendar tr th span{ 
+    padding: 5px;
+    display: block;
+    color: #fff;
+    background: #424242;
+    font-weight: 400;
+}
+.single #ui-datepicker-div table.ui-datepicker-calendar tr td a{
+    background: none;
+    border-radius: 0;
+    text-align: center;
+}
+.single #ui-datepicker-div table.ui-datepicker-calendar tr td.ui-datepicker-current-day a{ 
+    background: #3f6bb2;
+    border-color: #3f6bb2;
+    color: #fff;
+}
+.single #ui-datepicker-div table.ui-datepicker-calendar tr td.ui-datepicker-today a{ border-color: #3f6bb2; }
+.single #ui-datepicker-div table.ui-datepicker-calendar tr td span{
+    background: none;
+    border-radius: 0;
+    text-align: center;
+}
+
+/* Responsive */
+@media(max-width: 1060px){
+    .woocommerce .composite_form .composite_component.active_content .component_content .component_data{ padding: 28px 20px; }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-send-your-prescription-later{
+        padding: 0 0 50px;
+        margin: 0 0 40px;
+    }
+    #inline-1{ text-align: center; }
+    .logged-in #inline-1{ text-align: left; }
+    .logged-in #inline-1 .saved-presc{ padding: 0; }
+    .logged-in #inline-1 .switch-presc {
+        margin: 0;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+    }
+    .logged-in #inline-1 .saved-presc h3{ text-align: left; }
+    #inline-1 .switch-presc{
+        float: none;
+        margin: 0 0 20px;
+    }
+}
+
+@media(max-width: 1023px){
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-upload-prescription,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-save-prescription,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-pupillary-distance-pd,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-who-is-the-prescription-for,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-first-name,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-last-name{ width: 35.5%; }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-save-your-prescription-for-future-use{ width: 44%; }
+}
+
+@media(max-width: 990px){
+    .woocommerce .composite_form .composite_pagination ul li{ padding: 0 10px; }
+    .woocommerce .composite_form{ text-align: center; }
+    .woocommerce .composite_form .custom-back{
+        display: inline-block; 
+        vertical-align: middle; 
+    }
+    .woocommerce .composite_form .component_description p{
+        font-size: 20px;
+        text-align: center;
+    }
+    .woocommerce .composite_form ul.component_option_thumbnails_container{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .woocommerce .composite_form ul.component_option_thumbnails_container li.component_option_thumbnail_container{
+        width: 100% !important;
+        display: block;
+        margin: 0 0 20px;
+        padding: 0;
+    }
+
+    .woocommerce .composite_form .composite_component .component_content .bundled_products{ overflow: hidden; }
+    .woocommerce .composite_form .composite_component .component_content .bundled_products li:first-child{ width: 57% }
+    .woocommerce .composite_form .composite_component .component_content .bundled_products li{
+        float: left !important;
+        width: 43%;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundled_products li:first-child .product_title{ padding: 0 0 10px 80px; }
+    .woocommerce .composite_form .composite_component .component_content .bundled_products .product_title{
+        float: none;
+        width: 100%;
+        max-width: inherit;
+        padding: 0 0 10px;
+        text-align: center;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundled_products li .wc-pao-addon-container{
+        float: none;
+        width: 100%;
+        max-width: inherit;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundled_products .wc-pao-addon-container label{
+        float: left;
+        width: 80px;
+        text-align: left;
+        padding: 18px 0 0;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundled_products .form-row{ 
+        overflow: hidden; 
+        display: block;
+        clear: none;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundled_products li:first-child span.error{ padding-left: 80px; }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-space-and-border{
+        padding: 15px 0 0;
+        margin: 0 0 20px;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-upload-prescription,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-save-prescription,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-pupillary-distance-pd,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-who-is-the-prescription-for{
+        width: 100%;
+        float: none;
+        max-width: inherit;
+        padding: 0 0 10px;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-save-prescription{ clear: both; }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-first-name,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-last-name{
+        width: 50%;
+        float: left;
+        padding: 0 4px 20px;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd{
+        float: none;
+        width: 60%;
+        max-width: inherit;
+        margin: 0 auto;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-right-pd,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-left-pd{ 
+        width: 50%; 
+        float: left;
+        max-width: inherit;
+        margin: 0 0 10px;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-measure-my-pd{
+        float: none;
+        margin: 10px auto;
+        clear: both;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd-checkbox{
+        margin: 12px 0 20px;
+        padding: 0 0 20px;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-my-pupillary-distance-pd-is-listed-on-my-prescription{
+        float: none;
+        padding: 0;
+        margin: 20px 0 0;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-my-pupillary-distance-pd-is-listed-on-my-prescription label{}
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-pd-checkbox label{ margin: 0 auto; }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-save-your-prescription-for-future-use,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-date-of-prescription{ margin: 0 0 20px; }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-save-your-prescription-for-future-use{ width: 60%; }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-date-of-prescription{ width: 40%; }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-upload-prescription{ clear: both; }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-file-preview,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-upload-your-prescription{
+        width: 100%;
+        float: none;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-upload-your-prescription .form-row{ width:100%; }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-select-the-practice-where-you-had-your-prescription{
+        padding: 20px 0 0;
+        margin: 20px 0;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-practice-location{ 
+        float: none; 
+        width: 100%;
+        max-width: inherit;
+        clear: both;
+        padding: 0 0 10px;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-choose-your-practice{
+        float: none;
+        width: 100%;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-confirm{ 
+        float: left;
+        width: 100%;
+        margin: 30px 0 0;
+    }
+    .woocommerce .composite_form .composite_component.active_content .component_content .component_data.swatches-addon .wc-pao-addons-container{ margin: 0 0 10px; }
+
+    .logged-in #inline-1 .js-table-responsive .pres-values{
+        float: none;
+        width: auto;
+    }
+    .logged-in #inline-1 .js-table-responsive .pres-edit{
+        float: none;
+        width: auto;
+        padding: 10px 0 15px 0;
+        text-align: center;
+        min-height: inherit;
+    }
+
+    .start-over{ 
+        float: none; 
+        display: inline-block;
+        vertical-align: top;
+        margin: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .woocommerce .composite_form .composite_pagination{ 
+        position: static; 
+        margin: 0 0 20px;
+        display: block !important;
+    }
+    .composite_form.small_width .composite_navigation.top{ display: none !important; }
+    .woocommerce .composite_form .composite_pagination ul{ padding: 6px 0; }
+    .woocommerce .composite_form .composite_pagination ul li{
+        height: 30px;
+        line-height: 30px;
+    }
+    .woocommerce .composite_pagination .element_index{
+        width: 16px;
+        height: 16px;
+    }
+    .woocommerce .composite_pagination .element_link{ font-size: 12px; }
+    .woocommerce .composite_form .component_description{ margin: 0 0 10px; }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addons-container{ max-width: inherit; }
+    .woocommerce .composite_form .custom-back{ margin: 0 0 15px !important; }
+    .woocommerce .composite_form .component_option_thumbnail .image{ width: 100%; }
+    .logged-in #inline-1,
+    #inline-1{ text-align: center; }
+    .logged-in #inline-1 .switch-presc{
+        position: static;
+        float: none;
+        margin: 0 0 14px;
+    }
+    .logged-in #inline-1 .saved-presc h3{ 
+        text-align: center; 
+        margin: 0 0 14px;
+    }
+    #inline-1 .js-table-responsive table.shop_table_responsive td:before{ display: none; }
+    .start-over{ margin: 0 0 10px; }
+}
+
+@media(max-width: 480px){
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-first-name, 
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon-last-name{
+        float: none;
+        width: 100%;
+        padding: 0 0 10px;
+    }
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-date-of-prescription,
+    .woocommerce .composite_form .composite_component .component_content .bundle_data .wc-pao-addon.wc-pao-addon-save-your-prescription-for-future-use{
+        float: none;
+        width: 100%;
+        padding: 0 0 10px;
+        margin: 0;
+    }
+    .component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper{ display: block !important; }
+    .component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li{ width: 100% !important; }
+    .component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li .vari-price{ position: static; }
+    .component_data table.variations tr.attribute_options:nth-child(1) ul.variable-items-wrapper li .variable-item-contents{ padding: 15px 20px; }
+    .component_data table.variations tr.attribute_options:nth-child(2){ width: 100%; }
+    ul.variable-items-wrapper.button-variable-wrapper.custom-ul{ margin: 5px 0 0 !important; }
+    .woocommerce .composite_form .composite_data .composite_summary ul.summary_elements > li{
+        padding: 14px;
+        min-height: inherit;
+    }
+    .woocommerce .composite_form .composite_data .composite_summary ul.summary_elements .summary_element_title{
+        float: none;
+        width: auto;
+    }
+    .woocommerce .composite_form .composite_data .composite_summary ul.summary_elements .summary_element_selection{ 
+        width: 80%; 
+        padding: 10px 0 0;
+    }
+    .woocommerce .composite_form .composite_price{ padding: 14px 10px 20px; }
+    .woocommerce .composite_form .composite_price .price:before{
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 0 0 12px;
+    }
+    .woocommerce .composite_form .composite_price .price .amount{
+        float: none;
+        text-align: center;
+    }
+    #inline-1 .js-table-responsive .rx-uname, 
+    #inline-1 .js-table-responsive .pres-date{ padding: 10px; }
+    #inline-1 .js-prescription-list ul{ 
+        overflow: hidden; 
+        max-width: 260px;
+        margin: 0 auto;
+    }
+    #inline-1 .js-prescription-list ul >li.js-heading{
+        width: 50px;
+        float: left;
+    }
+    #inline-1 .js-prescription-list ul >li{
+        float: left;
+        width: calc(50% - 25px);
+        border: none;
+    }
+    #inline-1 .js-prescription-list ul >li.js-heading span{ 
+        text-align: left; 
+        padding: 6px 0;
+    }
+    #inline-1 .js-prescription-list ul >li.js-heading span.js-box1{ min-height: 36px; }
+    #inline-1 .js-prescription-list ul >li span.js-box1,
+    #inline-1 .js-prescription-list ul >li span{ 
+        display: block; 
+        width: auto;
+        text-align: center;
+        padding: 6px 0;
+    }
+    #inline-1 .js-prescription-list ul >li span{ min-height: 32px; }
+    #inline-1 .login-form-wrapper{ margin:0; }
+}
